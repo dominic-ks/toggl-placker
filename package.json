@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gcloud functions deploy toggl-placker --region europe-west2 --runtime nodejs12 --trigger-topic five-minute-cron --entry-point run --env-vars-file .env.yaml",
-    "set-project": "gcloud config set project be-devious-administration",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
