@@ -1,0 +1,19 @@
+{
+  "name": "toggl-placker",
+  "version": "0.0.1",
+  "description": "Cloud function to update Placker cards with Toggl time entries",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gcloud functions deploy toggl-placker --region europe-west2 --runtime nodejs12 --trigger-topic five-minute-cron --entry-point run --env-vars-file .env.yaml",
+    "set-project": "gcloud config set project be-devious-administration",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "date-and-time": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "toggl-api": "git+https://github.com/sbacarob/node-toggl-api.git"
+  }
+}
