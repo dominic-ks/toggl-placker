@@ -78,7 +78,6 @@ exports.run = ( event , context ) => {
       }
 
       let actualEffort = 0;
-      let cardDuration = 0;
       let cardTitle = timeEntry.description;
       let externalFields = {};
       let relatedCard = await lookupPlackerCard( cardTitle );
