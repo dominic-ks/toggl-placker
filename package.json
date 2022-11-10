@@ -13,6 +13,6 @@
     "axios": "^0.21.1",
     "date-and-time": "^1.0.0",
     "dotenv": "^8.2.0",
-    "toggl-api": "git+https://github.com/sbacarob/node-toggl-api.git"
+    "toggl-api": "^1.0.2"
   }
 }
