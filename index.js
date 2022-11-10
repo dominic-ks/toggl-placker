@@ -2,7 +2,7 @@ const dotenv = require( 'dotenv' );
 dotenv.config();
 
 const date = require( 'date-and-time' );
-const axios = require('axios');
+const axios = require( 'axios' );
 
 var TogglClient = require( 'toggl-api' );
 var toggl = new TogglClient({ apiToken: process.env.TOGGLEAPIKEY });
