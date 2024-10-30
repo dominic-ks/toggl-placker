@@ -79,8 +79,6 @@ exports.run = async (event, context) => {
     let externalFields = {};
     let relatedCard = await lookupPlackerCard(cardTitle);
 
-    console.log( relatedCard );
-
     if (typeof(relatedCard.id) === 'undefined') {
       continue;
     }
