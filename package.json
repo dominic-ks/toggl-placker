@@ -4,7 +4,7 @@
   "description": "Cloud function to update Placker cards with Toggl time entries",
   "main": "index.js",
   "scripts": {
-    "deploy": "gcloud functions deploy toggl-placker --region europe-west2 --runtime nodejs12 --trigger-topic five-minute-cron --entry-point run --env-vars-file .env.yaml",
+    "deploy": "gcloud functions deploy toggl-placker --region europe-west2 --runtime nodejs20 --trigger-topic five-minute-cron --entry-point run --env-vars-file .env.yaml",
     "start": "node -e 'require(\"./index\").run()'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
